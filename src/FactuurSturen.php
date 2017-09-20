@@ -19,7 +19,7 @@ class FactuurSturen
     {
         $this->client = new Client(
             [
-                'base_uri' => config('services.factuursturen.api'),
+                'base_uri' => 'https://www.factuursturen.nl/api/v1/',
                 'headers'  => [
                     'Accept' => 'application/json',
                 ]
