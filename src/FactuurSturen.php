@@ -26,9 +26,13 @@ class FactuurSturen
             ]
         );
 
-        $this->auth = [
+        /*$this->auth = [
             config('services.factuursturen.username'),
             config('services.factuursturen.key')
+        ];*/
+		$this->auth = [
+            env('FACTUURSTUREN_USERNAME'),
+            env('FACTUURSTUREN_KEY')
         ];
     }
 
